@@ -12,7 +12,6 @@
 #include <avr/io.h>
 #include <avr/wdt.h>
 
-#include "Arduino_FreeRTOS.h"
 #include "task.h"
 
 #ifdef __cplusplus
@@ -36,9 +35,9 @@ extern "C" {
 
 /*-----------------------------------------------------------*/
 
-void initVariant(void) __attribute__((flatten));
+void initVariant(void);
 
-void vApplicationIdleHook( void ) __attribute__((flatten));
+void vApplicationIdleHook( void );
 
 void vApplicationMallocFailedHook( void );
 void vApplicationStackOverflowHook( TaskHandle_t xTask, portCHAR *pcTaskName );

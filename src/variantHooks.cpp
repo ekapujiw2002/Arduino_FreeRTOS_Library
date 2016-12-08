@@ -1,5 +1,5 @@
 /*
-    FreeRTOS V8.2.3 - This file is NOT part of the FreeRTOS distribution.
+    FreeRTOS V9.0.0 - This file is NOT part of the FreeRTOS distribution.
 
     FreeRTOS is free software; you can redistribute it and/or modify it under
     the terms of the GNU General Public License (version 2) as published by the
@@ -80,7 +80,7 @@ extern void loop(void);
 
 /*-----------------------------------------------------------*/
 
-void initVariant(void) __attribute__ ((flatten, OS_main));
+void initVariant(void) __attribute__ ((OS_main));
 void initVariant(void)
 {
 #if defined(USBCON)
